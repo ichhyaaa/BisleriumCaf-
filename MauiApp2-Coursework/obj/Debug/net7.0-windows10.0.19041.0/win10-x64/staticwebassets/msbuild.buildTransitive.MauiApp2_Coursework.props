@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\MauiApp2_Coursework.props" />
+</Project>
