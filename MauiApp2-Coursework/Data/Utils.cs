@@ -46,7 +46,7 @@ public static class Utils
     {
         return Path.Combine(
             Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
-            "Islington-Todo"
+            "BisleriumCafé"
         );
     }
 
@@ -54,10 +54,17 @@ public static class Utils
     {
         return Path.Combine(GetAppDirectoryPath(), "users.json");
     }
-
-    public static string GetTodosFilePath(Guid userId)
+    public static string GetCoffeeFilePath()
     {
-        return Path.Combine(GetAppDirectoryPath(), userId.ToString() + "_todos.json");
+        return Path.Combine(GetAppDirectoryPath(), "coffee.json");
+    }
+    public static string GetAppAddInFilePath()
+    {
+        return Path.Combine(GetAppDirectoryPath(), "addIns.json");
+    }
+
+    public static string GetAppOrdersFilePath()
+    {
+        return Path.Combine(GetAppDirectoryPath(), "orders.json");
     }
 }
-
